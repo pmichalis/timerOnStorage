@@ -17,7 +17,7 @@
 		status = 0;
 		time = 0;
 		document.getElementById("startBtn").disabled = false;
-		document.getElementById("timelabel").innerHTML = "00:00";
+		document.getElementById("timeLabel").innerHTML = "00:00";
 
 	 }
 	 function timer(){
@@ -41,7 +41,6 @@
 				localStorage.setItem('timer', JSON.stringify(time));
 				const retrievedObject = localStorage.getItem('timer');
 				localStorage.removeItem('reset');
-				console.log(localStorage.getItem('reset'));
 			},10);
 		}
 	 
